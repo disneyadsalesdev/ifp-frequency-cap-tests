@@ -26,6 +26,7 @@ irm-rules/
 .DS_Store
 Thumbs.db
 *.swp
+~$*
 
 # User MCP config must stay on each machine — never commit
 mcp.json

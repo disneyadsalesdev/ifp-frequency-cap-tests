@@ -104,7 +104,7 @@ Ask a teammate to sit with you for **B4–B7** if you get stuck.
 
 1. Connect **Hulu VPN** — confirm it works.
 2. Open **https://ifp-portal-prod.aor.prod.hulu.com/home** — confirm you can log in (SSO).
-3. Ask trainer for **git links** or **two zip files** for the folders below.
+3. Ask trainer for **git clone URLs** (see `docs/CLONE-INSTRUCTIONS.md`) or zip files if git is not ready yet.
 
 ### B2. Create your projects folder
 

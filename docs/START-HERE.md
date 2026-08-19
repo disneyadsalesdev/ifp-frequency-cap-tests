@@ -36,4 +36,4 @@ py build_new_user_deck.py
 py build_deck.py
 ```
 
-3. Share **NEW-USER-SIMPLE-GUIDE.pdf** + **NEW-USER-SIMPLE-GUIDE.pptx** with new hires (optional: **training-guide.pptx**).
+3. Share **NEW-USER-SIMPLE-GUIDE.pdf** + **NEW-USER-SIMPLE-GUIDE.pptx** and **`docs/CLONE-INSTRUCTIONS.md`** (git URLs once pushed).

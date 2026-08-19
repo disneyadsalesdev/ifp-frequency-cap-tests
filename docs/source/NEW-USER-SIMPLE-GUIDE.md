@@ -128,8 +128,8 @@ C:\Users\YourName\projects\ifp-mcp-server
 
 ```powershell
 cd C:\Users\YourName\projects
-git clone https://YOUR-TEAM-URL/ifp-frequency-cap-tests.git
-git clone https://YOUR-TEAM-URL/ifp-mcp-server.git
+git clone https://github.com/disneyadsalesdev/ifp-frequency-cap-tests.git
+git clone https://github.com/disneyadsalesdev/ifp-mcp-server.git
 ```
 
 **Option 2 — Zip files:**

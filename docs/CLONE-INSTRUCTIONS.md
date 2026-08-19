@@ -2,10 +2,10 @@
 
 Share **these two clone URLs** with your team (replace placeholders after you push to your git host).
 
-| Repo | Clone URL (fill in after push) |
-|------|--------------------------------|
-| IFP tests + docs | `https://YOUR-GIT-SERVER/YOUR-TEAM/ifp-frequency-cap-tests.git` |
-| MCP server | `https://YOUR-GIT-SERVER/YOUR-TEAM/ifp-mcp-server.git` |
+| Repo | Clone URL |
+|------|-----------|
+| IFP tests + docs | `https://github.com/disneyadsalesdev/ifp-frequency-cap-tests.git` |
+| MCP server | `https://github.com/disneyadsalesdev/ifp-mcp-server.git` |
 
 Same URLs work on **Windows and Mac**.
 
@@ -17,8 +17,8 @@ Same URLs work on **Windows and Mac**.
 mkdir C:\Users\YourName\projects -ErrorAction SilentlyContinue
 cd C:\Users\YourName\projects
 
-git clone https://YOUR-GIT-SERVER/YOUR-TEAM/ifp-frequency-cap-tests.git
-git clone https://YOUR-GIT-SERVER/YOUR-TEAM/ifp-mcp-server.git
+git clone https://github.com/disneyadsalesdev/ifp-frequency-cap-tests.git
+git clone https://github.com/disneyadsalesdev/ifp-mcp-server.git
 
 py -m pip install -r C:\Users\YourName\projects\ifp-mcp-server\requirements.txt
 ```
@@ -35,8 +35,8 @@ Cursor → **Open Folder** → `ifp-frequency-cap-tests` → Reload → MCP **gr
 mkdir -p ~/projects
 cd ~/projects
 
-git clone https://YOUR-GIT-SERVER/YOUR-TEAM/ifp-frequency-cap-tests.git
-git clone https://YOUR-GIT-SERVER/YOUR-TEAM/ifp-mcp-server.git
+git clone https://github.com/disneyadsalesdev/ifp-frequency-cap-tests.git
+git clone https://github.com/disneyadsalesdev/ifp-mcp-server.git
 
 python3 -m pip install -r ~/projects/ifp-mcp-server/requirements.txt
 ```

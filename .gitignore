@@ -4,22 +4,34 @@
 *.pem
 *.key
 
+# Personal MCP config (templates in docs/templates/ are tracked)
+**/.cursor/mcp.json
+
 # Python
 __pycache__/
 *.pyc
 .venv/
 venv/
 
-# Node (optional TS tooling in scripts)
-node_modules/
-
-# Generated forecast output (re-run locally)
+# Generated / local-only (not needed for onboarding)
 output/
+scripts/
+assets/
+docs/images/
+docs/sharepoint-chatbot/
+docs/training-guide*
+docs/~$*
+docs/*.html
+docs/30-minute-coworker-session.md
+docs/complete-ifp-mcp-setup-guide.md
+docs/cursor-anatomy-recording-script.md
+docs/deck_onboarding.py
+docs/enterprise-ai-how-to-guide.md
+docs/generate_mcp_json_image.py
+docs/teammate-ifp-portal-and-mcp-setup.md
+docs/scripts/
 
-# Large / cached assets
-scripts/pptx_assets/
-
-# Nested repo (irm-rules is published separately)
+# Nested repo (published separately)
 irm-rules/
 
 # OS / editor
@@ -27,6 +39,3 @@ irm-rules/
 Thumbs.db
 *.swp
 ~$*
-
-# User MCP config must stay on each machine — never commit
-mcp.json

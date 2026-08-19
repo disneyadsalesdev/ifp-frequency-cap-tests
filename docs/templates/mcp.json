@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ifp-forecast": {
+      "type": "stdio",
+      "command": "py",
+      "args": ["C:/Users/YourName/projects/ifp-mcp-server/server.py"],
+      "env": {
+        "IFP_API_URL": "http://inventory-forecasting-prod-dplus.ava.prod.hulu.com/v1/inventory/forecast",
+        "IFP_SOURCE_HEADER": "RYM Frequency Cap Test",
+        "IFP_TESTS_ROOT": "C:/Users/YourName/projects/ifp-frequency-cap-tests"
+      }
+    }
+  }
+}

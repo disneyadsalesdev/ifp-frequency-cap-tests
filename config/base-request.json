@@ -1,0 +1,154 @@
+{
+  "start-date": "2026-08-10",
+  "end-date": "2026-12-31",
+  "ad-products": [
+    "VIDEO"
+  ],
+  "frequency-cap-detail": {
+    "frequency-caps": [
+      {
+        "limit": 2,
+        "duration": 1,
+        "duration-unit": "HOUR"
+      }
+    ],
+    "tier": "GUARANTEED",
+    "product-id": 9242
+  },
+  "targeting-detail": {
+    "targeting-rules": [
+      {
+        "definition": {
+          "not": false,
+          "sub-class": "com.disney.digital.ads.rule.manager.common.And",
+          "term-list": [
+            {
+              "sub-class": "com.disney.digital.ads.rule.manager.common.Include",
+              "dimension": "publisher",
+              "value-set": [
+                "ABC",
+                "ABC_NEWS",
+                "ABC_NEWS_BAY_AREA",
+                "ABC_NEWS_CENTRAL_CALIFORNIA",
+                "ABC_NEWS_CHICAGO",
+                "ABC_NEWS_HOUSTON",
+                "ABC_NEWS_LOS_ANGELES",
+                "ABC_NEWS_NEW_YORK",
+                "ABC_NEWS_NORTH_CAROLINA",
+                "ABC_NEWS_PHILADELPHIA",
+                "DISNEY_PLUS",
+                "FREEFORM",
+                "FUBO_TV",
+                "FX",
+                "HULU"
+              ],
+              "not": false,
+              "supported": true
+            },
+            {
+              "sub-class": "com.disney.digital.ads.rule.manager.common.Include",
+              "dimension": "genre",
+              "value-set": [
+                "E22F9368-056C-4337-AE2D-5E77894109A6",
+                "ECBAE285-C116-48C4-AC59-358EEE2D5E31",
+                "45F09698-DCFC-414E-88C9-65F853F4D420",
+                "CF421390-F6FB-402D-BF06-079BA39D7281",
+                "A5035159-C4A8-4EB8-B03D-C8EB8F088541",
+                "A8767E06-4B88-4EA3-B688-33F864A5C424",
+                "724A36F6-B824-40C1-B022-B42699309ACC",
+                "73E309FA-F7D2-4D9C-B79B-31DAABA54320",
+                "9F1A5146-D14C-4C4D-B460-74F9CBE24688",
+                "E9E04B0B-75C5-403D-ACF8-E137D82D061E",
+                "DE284589-ECC5-40FA-89FF-639509EC98D0",
+                "7D00A83E-556B-4F3C-B894-7C20F4360A1C",
+                "114A3757-478C-43E6-84A3-D51A482D0E98",
+                "FB01A259-0859-44D5-B62E-9A3CD2E41DAE",
+                "FE6DE09E-8F51-4FA3-A447-38C6F7106177",
+                "5EF6F34E-E2A6-4520-A877-1DB91774A8CF",
+                "3534E080-51FE-4572-89CC-FB7119C6E2B7",
+                "447B5CC2-D83A-4385-9FBB-C470FE55DE17",
+                "E45BE874-9326-4AFF-B4C8-C08051DEADEC",
+                "1C3071F6-1314-41B4-9C18-E60AA4BD8B0F",
+                "6AF63517-24CA-4391-9C3E-CBD413E1E15F",
+                "DB5372FE-BD20-47A2-9AEE-716620C95D66",
+                "CB0E4289-9E42-45FD-B9A5-3C61D1F50CF2",
+                "209BE388-6241-48FC-8A9D-8B83A800E81C",
+                "C26AC173-E7B1-4C84-8221-0D5843E16ED9",
+                "FDD50160-27BF-4FC4-A7AC-9040BE5A5E35",
+                "5AB180E7-74A3-4503-8E07-22E782AC57E3",
+                "CD0399D6-66B4-42B5-B9E4-1CDE90CBC36E",
+                "0A399920-943D-4717-8F2A-DB7358266897",
+                "AA52E9EE-D306-4D6D-8D5F-650E11ED7678",
+                "82017C13-72CC-4B51-896A-A17F31842B5E",
+                "54A097D6-15D6-4D8A-85FF-E223A723E278",
+                "8257FF22-F776-41E0-B991-17DF0A3BC227",
+                "72DA5FE4-BC6D-456A-811F-73B59B238C92",
+                "DFE91E5F-9F47-44CE-AFBB-8B39BED21220",
+                "94414A7A-4CBD-4092-A99E-36003544CD8B",
+                "4F397AA9-12D1-4264-95AA-313A95A7C65D",
+                "4B25E5D8-9D86-44AC-AADD-1A7C83338DFE",
+                "8B451764-B4BE-4047-907F-EA2F35FA43B4",
+                "CDF4B897-94A4-4F0A-B223-D2F65366F3F6",
+                "779A66BF-64C8-4D53-B5A0-F872875CE738",
+                "71C767D9-1FFB-412D-9A56-22F2BBA078B3",
+                "47340121-81A8-466C-B0DF-6D09B25FBDA5",
+                "DED887DD-CBDF-4412-91A3-C3C34F683ED0",
+                "FBF08BCF-675E-439D-A0AC-7551D5CE0931",
+                "6613EFD2-B8A7-4328-8DC3-E5A04C65B916",
+                "920D79F2-0F54-44AE-82D8-CC4A0CFC3571",
+                "DA56D25B-49E8-462A-B0F6-D09F933D42C5",
+                "2376E385-8D00-4DA4-A2D8-E67BB2973F7F",
+                "C64FC25E-CD16-4C9F-A4F4-3B9F2BA97945",
+                "6381C6F4-2314-4C8C-B466-5EAF09A44282",
+                "E76C979F-43CA-46EA-9C49-BE31DD15E5A6",
+                "B389F15D-711E-47BD-B6E5-686A0C052ED8",
+                "7B378557-8B90-434C-A732-C10C02FF3A78",
+                "24DA6317-365C-4D66-AD4C-AE768110FD86",
+                "E484E56A-E1C7-4E6E-96DF-D365C36C2BE5",
+                "63D866D3-6C85-4700-B4D8-F959971223F8",
+                "54AF64AD-EA34-477B-B2AF-2EEB55FE2316",
+                "B7959215-983A-4B43-9002-F7F24C8CE89F",
+                "B2B9D480-D7BC-43E5-A1F6-064FB6390F15",
+                "8EC22805-D873-4493-AC9B-9B3830A67CE6",
+                "C1D0C0DB-6CFD-4B43-95BF-C44EDBCC9B3C",
+                "2491AA46-E771-4F9D-8A08-3D92C29023A9"
+              ],
+              "not": false,
+              "supported": true
+            },
+            {
+              "sub-class": "com.disney.digital.ads.rule.manager.common.Include",
+              "dimension": "genre",
+              "value-set": [
+                "E567FB3C-850E-48A1-8DFB-CECD02737BD7",
+                "53D92CC4-A5E2-4EA2-A5CB-FA6BE6DCAF83"
+              ],
+              "not": true,
+              "supported": true
+            },
+            {
+              "sub-class": "com.disney.digital.ads.rule.manager.common.Include",
+              "dimension": "distributor",
+              "value-set": [
+                "ESPN",
+                "ESPN_DEPORTES",
+                "ESPN_PLUS"
+              ],
+              "not": true,
+              "supported": true
+            },
+            {
+              "sub-class": "com.disney.digital.ads.rule.manager.common.Include",
+              "dimension": "country",
+              "value-set": [
+                "US"
+              ],
+              "not": false,
+              "supported": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

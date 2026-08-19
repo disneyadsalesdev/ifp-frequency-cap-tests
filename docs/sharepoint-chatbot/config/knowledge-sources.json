@@ -1,0 +1,26 @@
+{
+  "siteUrl": "https://twdc.sharepoint.com/sites/ETAnthropic",
+  "description": "Approved SharePoint knowledge sources for the ET Anthropic Help Bot. Update folder paths after IT confirms scope.",
+  "libraries": [
+    {
+      "name": "Shared Documents",
+      "folders": [
+        "Training",
+        "Templates",
+        "AI Guides"
+      ],
+      "includeSubfolders": true,
+      "notes": "Primary training decks, SOPs, and onboarding docs"
+    }
+  ],
+  "sitePages": {
+    "enabled": true,
+    "notes": "Include ET Anthropic home page and key wiki/how-to pages if IT approves"
+  },
+  "excludePatterns": [
+    "Draft*",
+    "*-confidential*",
+    "Archive/*"
+  ],
+  "refreshSchedule": "Re-publish agent after major doc updates (monthly or on request)"
+}

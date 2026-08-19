@@ -1,0 +1,31 @@
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (optional TS tooling in scripts)
+node_modules/
+
+# Generated forecast output (re-run locally)
+output/
+
+# Large / cached assets
+scripts/pptx_assets/
+
+# Nested repo (irm-rules is published separately)
+irm-rules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# User MCP config must stay on each machine — never commit
+mcp.json

@@ -1,0 +1,51 @@
+{
+  "description": "Expected avail/capacity ratios for frequency cap test cases. Update values from your team's reference sheet.",
+  "default_tolerance": 0.001,
+  "response_fields": {
+    "availability": "availability",
+    "capacity": "capacity",
+    "ratio": "computed as availability / capacity"
+  },
+  "cases": [
+    {
+      "id": "2-per-1-day",
+      "description": "2 impressions per 1 day",
+      "frequency_cap": {
+        "limit": 2,
+        "duration": 1,
+        "duration-unit": "DAY"
+      },
+      "expected_avail_capacity_ratio": 0.0460
+    },
+    {
+      "id": "1-per-1-hour",
+      "description": "1 impression per 1 hour",
+      "frequency_cap": {
+        "limit": 1,
+        "duration": 1,
+        "duration-unit": "HOUR"
+      },
+      "expected_avail_capacity_ratio": 0.030
+    },
+    {
+      "id": "3-per-30-minute",
+      "description": "3 impressions per 30 minutes",
+      "frequency_cap": {
+        "limit": 3,
+        "duration": 30,
+        "duration-unit": "MINUTE"
+      },
+      "expected_avail_capacity_ratio": 0.0671
+    },
+    {
+      "id": "4-per-30-day",
+      "description": "4 impressions per 30 days (monthly cap)",
+      "frequency_cap": {
+        "limit": 4,
+        "duration": 30,
+        "duration-unit": "DAY"
+      },
+      "expected_avail_capacity_ratio": null
+    }
+  ]
+}

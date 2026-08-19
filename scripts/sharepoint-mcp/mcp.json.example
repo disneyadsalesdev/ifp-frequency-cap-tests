@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "sharepoint-search": {
+      "type": "stdio",
+      "command": "py",
+      "args": [
+        "C:/Users/YourName/projects/rym-work/ifp-frequency-cap-tests/scripts/sharepoint-mcp/server.py"
+      ],
+      "env": {
+        "AZURE_CLIENT_ID": "YOUR_APP_REGISTRATION_CLIENT_ID",
+        "AZURE_TENANT_ID": "YOUR_TENANT_ID",
+        "SHAREPOINT_SITE_URL": "https://twdc.sharepoint.com/sites/ETAnthropic"
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "description": "Sample topics and test prompts for Copilot Studio agent validation",
+  "topics": [
+    {
+      "name": "FindTrainingGuide",
+      "triggerPhrases": [
+        "where is the cursor training guide",
+        "cursor training deck",
+        "training powerpoint"
+      ],
+      "expectedBehavior": "Return path to Cursor training materials in SharePoint; link or folder path"
+    },
+    {
+      "name": "ClaudePortalAccess",
+      "triggerPhrases": [
+        "how do I download claude",
+        "claude portal access",
+        "get claude enterprise"
+      ],
+      "expectedBehavior": "Steps from connected docs: IT portal, SSO, approved URL — no consumer claude.ai unless policy allows"
+    },
+    {
+      "name": "MSTRDailyReport",
+      "triggerPhrases": [
+        "mstr daily report",
+        "daily email report process"
+      ],
+      "expectedBehavior": "Point to MSTR report SOP or training deck section if indexed"
+    },
+    {
+      "name": "CopilotSetup",
+      "triggerPhrases": [
+        "set up copilot agents",
+        "copilot studio",
+        "teams copilot bot"
+      ],
+      "expectedBehavior": "High-level steps: license, Copilot Studio, SharePoint knowledge, publish to Teams"
+    },
+    {
+      "name": "FolderNavigation",
+      "triggerPhrases": [
+        "where is the template",
+        "which folder has",
+        "find file in sharepoint"
+      ],
+      "expectedBehavior": "Folder path + file name from knowledge sources; admit uncertainty if not found"
+    }
+  ],
+  "testPrompts": [
+    "Where is the Q3 forecast template?",
+    "How do I get access to the Claude AI portal?",
+    "What's the MSTR daily report workflow?",
+    "How do I integrate Claude with Excel?",
+    "Which SharePoint folder has the Cursor onboarding deck?",
+    "How do we set up a Copilot agent for our team?"
+  ]
+}

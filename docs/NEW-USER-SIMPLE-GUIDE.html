@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>New User Guide — Cursor + IFP</title>
+<style>
+@page { size: letter; margin: 0.75in; }
+body {
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.45;
+  color: #1e293b;
+}
+h1 { font-size: 18pt; color: #1e3a8a; margin-top: 0.8em; page-break-before: always; }
+h1:first-of-type { page-break-before: avoid; font-size: 22pt; }
+h2 { font-size: 13pt; color: #1e40af; margin-top: 1em; }
+h3 { font-size: 11pt; color: #334155; margin-top: 0.8em; }
+.part-banner {
+  background: #dbeafe;
+  border: 2px solid #1e40af;
+  padding: 10px 12px;
+  margin: 1em 0;
+  font-size: 11pt;
+}
+ul, ol { margin: 0.4em 0; }
+li { margin: 0.25em 0; }
+code, pre { font-family: Consolas, monospace; font-size: 9pt; }
+pre {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 8px 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 10pt; }
+th, td { border: 1px solid #cbd5e1; padding: 6px 8px; text-align: left; }
+th { background: #dbeafe; }
+hr { border: none; border-top: 1px solid #e2e8f0; margin: 1.5em 0; }
+a { color: #1d4ed8; }
+.cover-note { font-size: 10pt; color: #64748b; margin-bottom: 1.5em; }
+</style>
+</head>
+<body>
+<p class="cover-note">Internal — RYM onboarding. Share this PDF with new hires (not the source file).</p>
+<h1>Cursor + IFP + MSTR — New User Guide</h1>
+<p><strong>Version for new hires — read top to bottom. Do not skip the “Where do I start?” page.</strong></p>
+<hr />
+<h1>PAGE 1 — Where do I start? (read this first)</h1>
+<p><strong>You only need ONE file today:</strong></p>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>This guide (PDF)</strong></td>
+<td><code>ifp-frequency-cap-tests/docs/NEW-USER-SIMPLE-GUIDE.pdf</code></td>
+</tr>
+<tr>
+<td><strong>Live training slides (optional)</strong></td>
+<td>Ask trainer for <code>training-guide.pptx</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ignore other files in <code>docs/</code> until you are comfortable.</strong> Your trainer uses hidden source files to rebuild this PDF.</p>
+<hr />
+<h2>Which part of this guide do I need?</h2>
+<table>
+<thead>
+<tr>
+<th>I need to…</th>
+<th>Go to page / section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Install Cursor from scratch</td>
+<td><strong>Part A — Download Cursor</strong></td>
+</tr>
+<tr>
+<td>First-day computer setup (folders, Python, MCP)</td>
+<td><strong>Part B — Day 1 setup</strong></td>
+</tr>
+<tr>
+<td>Open Cursor Settings, MCP green, Run Mode</td>
+<td><strong>Part C — Cursor Settings</strong></td>
+</tr>
+<tr>
+<td>Learn Agent vs Ask, New Chat, Run/Skip buttons</td>
+<td><strong>Part D — Chat &amp; approvals</strong></td>
+</tr>
+<tr>
+<td>Copy-paste first exercises in Cursor</td>
+<td><strong>Part E — Startup prompts</strong></td>
+</tr>
+<tr>
+<td>Run an IFP forecast every day</td>
+<td><strong>Part F — IFP day to day</strong></td>
+</tr>
+<tr>
+<td>Copy targeting from IFP website (F12)</td>
+<td><strong>Part G — IFP DevTools lab</strong></td>
+</tr>
+<tr>
+<td>Daily MSTR email + Excel report</td>
+<td><strong>Part H — MSTR day to day</strong></td>
+</tr>
+<tr>
+<td>Schedule weekly/daily MSTR emails</td>
+<td><strong>Part I — Mission Control</strong></td>
+</tr>
+<tr>
+<td>Something broke</td>
+<td><strong>Part J — Fix it</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>The three jobs (pick yours)</h2>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>What you do</th>
+<th>VPN?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IFP forecast</strong></td>
+<td>Type in Cursor chat → get capacity/available</td>
+<td><strong>Yes</strong> (Hulu VPN)</td>
+</tr>
+<tr>
+<td><strong>MSTR daily report</strong></td>
+<td>Cursor runs script → Outlook draft → you Send</td>
+<td>No (need Outlook)</td>
+</tr>
+<tr>
+<td><strong>Mission Control</strong></td>
+<td>Schedule MSTR emails in browser (setup once)</td>
+<td>Per your org</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Day 1 order (check off as you go)</h2>
+<ul>
+<li>[ ] Part A — Install Cursor  </li>
+<li>[ ] Part B — Get folders, Python, mcp.json, MCP green  </li>
+<li>[ ] Part C — Settings (MCP + Run Mode)  </li>
+<li>[ ] Part D — Read how Agent and Run buttons work  </li>
+<li>[ ] Part E — Do startup prompts (Ask then Agent)  </li>
+<li>[ ] Part F — One test forecast (VPN on)  </li>
+<li>[ ] Part H — Only if you own the daily report  </li>
+</ul>
+<hr />
+<h1>PART A — Download Cursor (every click)</h1>
+<p>You need Cursor <strong>before</strong> anything else.</p>
+<h3>A1. Open the website</h3>
+<ol>
+<li>Open <strong>Chrome</strong> or <strong>Edge</strong>.</li>
+<li>Click the address bar at the top.</li>
+<li>Type: <strong>cursor.com</strong></li>
+<li>Press <strong>Enter</strong>.</li>
+</ol>
+<h3>A2. Download</h3>
+<ol>
+<li>On the Cursor home page, click the <strong>Download</strong> button.</li>
+<li>If it asks <strong>Windows</strong> or <strong>Mac</strong>, choose <strong>Windows</strong>.</li>
+<li>Wait for the file to download (often in your <strong>Downloads</strong> folder).</li>
+<li>The file name is usually like <strong>Cursor Setup.exe</strong>.</li>
+</ol>
+<h3>A3. Install</h3>
+<ol>
+<li>Open <strong>Downloads</strong> in File Explorer.</li>
+<li>Double-click <strong>Cursor Setup.exe</strong>.</li>
+<li>If Windows asks “Do you want to allow this app to make changes?” click <strong>Yes</strong>.</li>
+<li>Follow the installer (<strong>Next</strong> → <strong>Install</strong> → <strong>Finish</strong>).</li>
+</ol>
+<h3>A4. First open</h3>
+<ol>
+<li>Open Cursor from the <strong>Start menu</strong> (search “Cursor”).</li>
+<li>If it asks you to <strong>Sign in</strong>, sign in (use work account if IT requires it).</li>
+<li>If it asks about importing VS Code settings, you can click <strong>Skip</strong> or <strong>Continue</strong> — either is fine.</li>
+<li>Optional: <strong>Help</strong> menu → <strong>Check for Updates</strong>.</li>
+</ol>
+<h3>A5. Pin it (optional)</h3>
+<ol>
+<li>With Cursor open, right-click its icon on the taskbar → <strong>Pin to taskbar</strong>.</li>
+</ol>
+<p><strong>Done with Part A.</strong> Continue to Part B.</p>
+<hr />
+<h1>PART B — Day 1 setup (one time only)</h1>
+<p>Ask a teammate to sit with you for <strong>B4–B7</strong> if you get stuck.</p>
+<h3>B1. Check access</h3>
+<ol>
+<li>Connect <strong>Hulu VPN</strong> — confirm it works.</li>
+<li>Open <strong>https://ifp-portal-prod.aor.prod.hulu.com/home</strong> — confirm you can log in (SSO).</li>
+<li>Ask trainer for <strong>git links</strong> or <strong>two zip files</strong> for the folders below.</li>
+</ol>
+<h3>B2. Create your projects folder</h3>
+<ol>
+<li>Open <strong>File Explorer</strong>.</li>
+<li>Go to <code>C:\Users\</code> and open <strong>your</strong> folder (your Windows name).</li>
+<li>If there is no <strong><code>projects</code></strong> folder: right-click → <strong>New</strong> → <strong>Folder</strong> → name it <strong><code>projects</code></strong>.</li>
+</ol>
+<h3>B3. Get two folders on your PC</h3>
+<p>You must have <strong>both</strong> of these when done:</p>
+<pre><code>C:\Users\YourName\projects\ifp-frequency-cap-tests
+C:\Users\YourName\projects\ifp-mcp-server
+</code></pre>
+<p><strong>Option 1 — Git (trainer gives you URLs):</strong></p>
+<ol>
+<li>Press <strong>Windows key</strong>, type <strong>PowerShell</strong>, press <strong>Enter</strong>.</li>
+<li>Copy/paste (trainer replaces the URLs):</li>
+</ol>
+<pre><code class="language-powershell">cd C:\Users\YourName\projects
+git clone https://YOUR-TEAM-URL/ifp-frequency-cap-tests.git
+git clone https://YOUR-TEAM-URL/ifp-mcp-server.git
+</code></pre>
+<p><strong>Option 2 — Zip files:</strong></p>
+<ol>
+<li>Unzip both zips.</li>
+<li>Move folders so names and paths match exactly above.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Folder</th>
+<th>You use it for…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ifp-frequency-cap-tests</code></td>
+<td><strong>Open this in Cursor every day</strong> for IFP</td>
+</tr>
+<tr>
+<td><code>ifp-mcp-server</code></td>
+<td>Holds <code>server.py</code> — Cursor starts it; you rarely open this folder</td>
+</tr>
+</tbody>
+</table>
+<h3>B4. Install Python (for IFP helper only)</h3>
+<ol>
+<li>Install <strong>Python 3</strong> from <strong>python.org</strong> (or IT installer). Check <strong>Add to PATH</strong> if offered.</li>
+<li>In PowerShell:</li>
+</ol>
+<pre><code class="language-powershell">py --version
+</code></pre>
+<ol>
+<li>You should see a version number. Then:</li>
+</ol>
+<pre><code class="language-powershell">py -m pip install -r C:\Users\YourName\projects\ifp-mcp-server\requirements.txt
+</code></pre>
+<h3>B5. Create mcp.json (personal settings file)</h3>
+<p>This file is <strong>on your PC only</strong> — not in the git folders.</p>
+<ol>
+<li>File Explorer → <code>C:\Users\YourName\</code></li>
+<li><strong>View</strong> → turn on <strong>Hidden items</strong></li>
+<li>Open folder <strong><code>.cursor</code></strong> (create it if missing)</li>
+<li>Create file <strong><code>mcp.json</code></strong></li>
+<li>Trainer sends you this block — replace <strong><code>YourName</code></strong> with your Windows username:</li>
+</ol>
+<pre><code class="language-json">{
+  &quot;mcpServers&quot;: {
+    &quot;ifp-forecast&quot;: {
+      &quot;type&quot;: &quot;stdio&quot;,
+      &quot;command&quot;: &quot;py&quot;,
+      &quot;args&quot;: [
+        &quot;C:/Users/YourName/projects/ifp-mcp-server/server.py&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;IFP_API_URL&quot;: &quot;http://inventory-forecasting-prod-dplus.ava.prod.hulu.com/v1/inventory/forecast&quot;,
+        &quot;IFP_SOURCE_HEADER&quot;: &quot;RYM Frequency Cap Test&quot;,
+        &quot;IFP_TESTS_ROOT&quot;: &quot;C:/Users/YourName/projects/ifp-frequency-cap-tests&quot;
+      }
+    }
+  }
+}
+</code></pre>
+<ol>
+<li><strong>Save</strong> the file.</li>
+</ol>
+<h3>B6. Reload Cursor</h3>
+<ol>
+<li>In Cursor: <strong>Ctrl+Shift+P</strong></li>
+<li>Type <strong>Reload Window</strong></li>
+<li>Press <strong>Enter</strong></li>
+</ol>
+<h3>B7. Open IFP folder in Cursor</h3>
+<ol>
+<li><strong>File → Open Folder</strong></li>
+<li>Select <strong><code>ifp-frequency-cap-tests</code></strong></li>
+<li>Left sidebar should show <strong><code>config</code></strong>, <strong><code>docs</code></strong>, <strong><code>scripts</code></strong>, etc.</li>
+</ol>
+<p><strong>Part B done.</strong> Next: Part C (Settings).</p>
+<hr />
+<h1>PART C — Cursor Settings (where to click)</h1>
+<h3>C1. Open Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Click <strong>gear icon</strong> bottom-left of Cursor <strong>OR</strong> press <strong>Ctrl+,</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>A settings panel opens</td>
+</tr>
+</tbody>
+</table>
+<h3>C2. Check MCP (IFP helper connected)</h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>In settings search box, type <strong>MCP</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Find server name <strong><code>ifp-forecast</code></strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Status must be <strong>green</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>If <strong>red</strong>: click for <strong>logs</strong> → ask trainer (usually wrong path in mcp.json or Part B4 failed)</td>
+</tr>
+</tbody>
+</table>
+<h3>C3. Set Run Mode (Run / Always / Ask — important for new users)</h3>
+<p>When the Agent runs commands or IFP tools, Cursor may show <strong>Run</strong>, <strong>Skip</strong>, or <strong>Add to allowlist</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>In settings search, type <strong>Run Mode</strong> or <strong>Agents</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Open <strong>Agents → Approvals &amp; Execution</strong> (wording may vary)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>For <strong>new hires</strong>, choose a mode that <strong>asks before</strong> running things</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Run Mode (name in Settings)</th>
+<th>What it means for you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Allowlist</strong> (empty list)</td>
+<td>Cursor asks before almost every command/MCP action</td>
+</tr>
+<tr>
+<td><strong>Auto-review</strong></td>
+<td>Some things run automatically after a review — fewer popups</td>
+</tr>
+<tr>
+<td><strong>Run everything</strong></td>
+<td><strong>Do not use on day 1</strong> — things run without asking</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Trainer tip:</strong> Until you are comfortable, pick the strictest mode your IT allows.</li>
+</ol>
+<h3>C4. After any mcp.json edit</h3>
+<ol>
+<li><strong>Ctrl+Shift+P</strong> → <strong>Reload Window</strong></li>
+</ol>
+<p><strong>Part C done.</strong></p>
+<hr />
+<h1>PART D — Chat, Agent, New Chat, Run buttons</h1>
+<h3>D1. Open chat</h3>
+<ol>
+<li>Press <strong>Ctrl+I</strong></li>
+<li>Chat panel opens (usually on the right)</li>
+</ol>
+<h3>D2. Start a NEW chat (do this for each new task)</h3>
+<ol>
+<li>At top of chat panel, click <strong>+</strong> or <strong>New Chat</strong></li>
+<li>Why: old messages confuse the Agent</li>
+</ol>
+<h3>D3. Pick the mode (top of chat panel)</h3>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>When to use</th>
+<th>Can it change files / run IFP?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ask</strong></td>
+<td>Learning, explaining JSON</td>
+<td><strong>No</strong> — safe for practice</td>
+</tr>
+<tr>
+<td><strong>Agent</strong></td>
+<td>Forecasts, scripts, edits</td>
+<td><strong>Yes</strong> — with your approval</td>
+</tr>
+<tr>
+<td><strong>Plan</strong></td>
+<td>Big multi-step jobs</td>
+<td>Makes a plan first, then Agent runs</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>IFP forecast</strong> → use <strong>Agent</strong></li>
+<li><strong>“What does this file mean?”</strong> → use <strong>Ask</strong></li>
+</ol>
+<h3>D4. Pick a model (optional)</h3>
+<ol>
+<li>Dropdown at top of chat — leave <strong>team default</strong> unless IT says otherwise</li>
+</ol>
+<h3>D5. When you see approval buttons</h3>
+<p><strong>For terminal commands and MCP (IFP) tools:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Run</strong> / <strong>Approve</strong></td>
+<td>OK this <strong>one time</strong> — only if VPN is on (for IFP) and request matches what you asked</td>
+</tr>
+<tr>
+<td><strong>Skip</strong> / <strong>Reject</strong></td>
+<td>Do not run — ask trainer</td>
+</tr>
+<tr>
+<td><strong>Add to allowlist</strong></td>
+<td>Trust for later — <strong>ask trainer before</strong> using</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For file edits (separate from Run):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accept</strong></td>
+<td>Keep the file change</td>
+</tr>
+<tr>
+<td><strong>Reject</strong></td>
+<td>Undo the change</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>PART E — Startup prompts (new hire — do in order)</h1>
+<p>Open <strong><code>ifp-frequency-cap-tests</code></strong> in Cursor first.</p>
+<h3>E1. Ask mode — no VPN needed</h3>
+<ol>
+<li><strong>Ctrl+I</strong> → <strong>New Chat</strong> → mode <strong>Ask</strong></li>
+<li>Paste and send:</li>
+</ol>
+<pre><code>Explain reference/cap-ratio-expectations.json in simple terms.
+What is one test case?
+</code></pre>
+<ol>
+<li><strong>New Chat</strong> → <strong>Ask</strong> → paste:</li>
+</ol>
+<pre><code>What is the DMA code for Baton Rouge? Use reference/dma-codes.json.
+</code></pre>
+<ol>
+<li><strong>New Chat</strong> → <strong>Ask</strong> → paste:</li>
+</ol>
+<pre><code>Explain config/base-request.json — dates and main targeting only.
+Do not change any files.
+</code></pre>
+<h3>E2. Agent mode — creates one practice file</h3>
+<ol>
+<li><strong>New Chat</strong> → mode <strong>Agent</strong></li>
+<li>Paste:</li>
+</ol>
+<pre><code>Create practice-notes.md with 4 bullets summarizing caps, DMA codes, and base-request.json.
+</code></pre>
+<ol>
+<li>Read the diff → <strong>Accept</strong> if OK</li>
+</ol>
+<h3>E3. Agent + VPN — one live forecast</h3>
+<ol>
+<li>Turn <strong>Hulu VPN</strong> on</li>
+<li><strong>New Chat</strong> → <strong>Agent</strong></li>
+<li>Paste:</li>
+</ol>
+<pre><code>Use ifp_server_info to show configuration.
+</code></pre>
+<ol>
+<li>If Cursor shows MCP approval → read tool name → <strong>Run</strong></li>
+<li>Paste:</li>
+</ol>
+<pre><code>Run a forecast for July 8, 2026, Hulu US, Baton Rouge, 2 per hour.
+Show capacity and available.
+</code></pre>
+<ol>
+<li>If approval appears again → <strong>Run</strong> (VPN must be on)</li>
+</ol>
+<p><strong>Part E done</strong> — you are set up to use Cursor for IFP.</p>
+<hr />
+<h1>PART F — IFP day to day (every forecast)</h1>
+<p>Repeat these steps each time.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Hulu VPN</strong> on</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Cursor → <strong>File → Open Folder</strong> → <code>ifp-frequency-cap-tests</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Ctrl+I</strong> → <strong>New Chat</strong> → <strong>Agent</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Type your request in plain English, e.g.: <code>Run a forecast for [date], Hulu US, [city], [N] per hour. Show capacity and available.</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Click <strong>Run</strong> on any MCP approval if prompted</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Read <strong>capacity</strong> and <strong>available</strong> in the reply</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cap units:</strong> only <strong>MINUTE</strong>, <strong>HOUR</strong>, or <strong>DAY</strong> (e.g. 4 per 30 DAY for monthly-style caps).</p>
+<p><strong>City names:</strong> portal shows names; API uses <strong>numbers</strong> — ask Cursor or check <code>reference/dma-codes.json</code>.</p>
+<hr />
+<h1>PART G — IFP DevTools lab (targeting exercise)</h1>
+<p>Use when <strong>numbers don’t match the portal</strong> or <strong>product/targeting changed</strong>.</p>
+<p><strong>Goal:</strong> Copy the exact request the portal sends → save into <code>config/base-request.json</code>.</p>
+<h3>G1. Portal setup</h3>
+<ol>
+<li><strong>VPN on</strong></li>
+<li>Browser → <strong>https://ifp-portal-prod.aor.prod.hulu.com/home</strong></li>
+<li>Log in</li>
+<li>Build the forecast in the UI exactly like the deal:</li>
+<li>Dates  </li>
+<li>Product (note <strong>product-id</strong>)  </li>
+<li>Targeting (publishers, country, DMA, etc.)  </li>
+<li>Frequency cap  </li>
+</ol>
+<h3>G2. Open Developer Tools</h3>
+<ol>
+<li>Press <strong>F12</strong> on keyboard (or <strong>Ctrl+Shift+I</strong>)</li>
+<li>A panel opens — usually at bottom or side of browser</li>
+<li>Click tab <strong>Network</strong></li>
+<li>Check box <strong>Preserve log</strong> (keeps requests after page changes)</li>
+<li>Click filter <strong>Fetch/XHR</strong> (hides images/CSS)</li>
+</ol>
+<h3>G3. Capture the request</h3>
+<ol>
+<li>In the portal, click <strong>Run forecast</strong> / <strong>Submit</strong></li>
+<li>In Network list, find a row containing <strong>forecast</strong> in the name or URL</li>
+<li><strong>Click that row</strong></li>
+<li>On the right, open <strong>Payload</strong> or <strong>Request</strong> (Chrome) / <strong>Request</strong> body (Edge)</li>
+<li>Copy the <strong>JSON request body</strong> — <strong>NOT</strong> the Response tab</li>
+</ol>
+<h3>G4. Save into project</h3>
+<ol>
+<li>In Cursor, open <strong><code>config/base-request.json</code></strong></li>
+<li>Replace contents with copied JSON <strong>or</strong> ask Agent:</li>
+</ol>
+<pre><code>Help me update config/base-request.json with this portal request payload: [paste JSON here]
+</code></pre>
+<ol>
+<li><strong>Save</strong> the file</li>
+<li><strong>VPN on</strong> → run <strong>Part F</strong> again → compare numbers to portal</li>
+</ol>
+<p><strong>Important:</strong> Picking a product in the portal fills targeting <strong>in the browser only</strong>. The saved JSON must include full <strong>targeting-detail</strong>, not just product-id.</p>
+<hr />
+<h1>PART H — MSTR day to day (daily publishers report)</h1>
+<p><strong>Different job from IFP.</strong> You need folder <strong><code>all-publishers-daily-report</code></strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Wait for <strong>MicroStrategy email</strong> in Outlook (often from <strong>microstrategy-prod@dpdo.info</strong>) with today’s <code>.xlsx</code> attachments</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Cursor → <strong>File → Open Folder</strong> → <code>all-publishers-daily-report</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Ctrl+I</strong> → <strong>New Chat</strong> → <strong>Agent</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Type: <code>Run dailypublisherscript.py</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Click <strong>Run</strong> if Cursor asks to run terminal commands</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Script updates Excel and opens an <strong>Outlook draft</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>You</strong> review the draft and click <strong>Send</strong> — Cursor does not send email for you</td>
+</tr>
+</tbody>
+</table>
+<p><strong>If email is missing:</strong> check <strong>Part I (Mission Control)</strong> schedule or ask analytics teammate.</p>
+<hr />
+<h1>PART I — Mission Control (schedule MSTR emails)</h1>
+<p><strong>Mission Control</strong> = MicroStrategy tool to <strong>schedule</strong> report emails. You set this up <strong>once</strong> (or verify existing schedules); it is <strong>not</strong> Cursor.</p>
+<blockquote>
+<p><strong>URL:</strong> Ask your manager for <strong>MicroStrategy Library</strong> and <strong>Mission Control</strong> links. Paste team URL here when known: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>______</p>
+</blockquote>
+<h3>I1. Find your report in Library</h3>
+<ol>
+<li>Connect VPN/network per org rules</li>
+<li>Open <strong>MicroStrategy Library</strong> (browser) → SSO login</li>
+<li>Search <strong>All Publisher Daily Report</strong> (or your team’s report name)</li>
+<li>Open the report to confirm it looks correct</li>
+</ol>
+<h3>I2. Create or edit a subscription in Mission Control</h3>
+<ol>
+<li>Open <strong>Mission Control</strong> (from Library menu or direct link)</li>
+<li>Click <strong>Create subscription</strong> or <strong>New schedule</strong> (wording varies)</li>
+<li>Select the report</li>
+<li>Set <strong>Recurrence:</strong></li>
+<li><strong>Daily</strong> — for daily report script (email must arrive before you run Part H)</li>
+<li><strong>Weekly</strong> — for weekly pulls/dashboards</li>
+<li>Set <strong>Format:</strong> <strong>Excel</strong> (<code>.xlsx</code>) if the daily script expects Excel</li>
+<li>Set <strong>Delivery:</strong> email to your team distribution list</li>
+<li><strong>Save</strong></li>
+<li>Run a <strong>test</strong> — confirm email arrives in Outlook</li>
+</ol>
+<h3>I3. Weekly checklist (example)</h3>
+<table>
+<thead>
+<tr>
+<th>When</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Each business day</td>
+<td>MSTR email arrived? → Part H daily script</td>
+</tr>
+<tr>
+<td>Weekly</td>
+<td>Mission Control job succeeded? (ask analytics if emails stop)</td>
+</tr>
+<tr>
+<td>After IFP deal change</td>
+<td>Part G DevTools → Part F test forecast</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>PART J — Fix it</h1>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Try this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forecast fails / timeout</td>
+<td><strong>VPN on?</strong></td>
+</tr>
+<tr>
+<td>MCP red in Settings</td>
+<td>Trainer checks <code>mcp.json</code> paths + Part B4 pip install + Reload Window</td>
+</tr>
+<tr>
+<td>“Python was not found”</td>
+<td>Use <strong><code>py</code></strong> not <strong><code>python</code></strong></td>
+</tr>
+<tr>
+<td>Cursor ran something scary</td>
+<td>Part C3 — stricter Run Mode; use <strong>Ask</strong> when learning</td>
+</tr>
+<tr>
+<td>IFP numbers ≠ portal</td>
+<td>Part G — missing targeting in <code>base-request.json</code></td>
+</tr>
+<tr>
+<td>No MSTR email today</td>
+<td>Part I — subscription failed or late</td>
+</tr>
+<tr>
+<td>PowerShell script blocked</td>
+<td><code>Set-ExecutionPolicy -Scope CurrentUser RemoteSigned</code> (once)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Never paste passwords or tokens in chat.</strong></p>
+<hr />
+<h1>PART K — Who to ask</h1>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cursor install, git, mcp.json</td>
+<td>Your <strong>trainer</strong></td>
+</tr>
+<tr>
+<td>IFP wrong numbers / product</td>
+<td><strong>IFP owner</strong> on team</td>
+</tr>
+<tr>
+<td>Daily report / Outlook / Excel</td>
+<td><strong>Daily report owner</strong></td>
+</tr>
+<tr>
+<td>Mission Control / MSTR schedules</td>
+<td><strong>Analytics</strong> teammate</td>
+</tr>
+<tr>
+<td>IT / VPN / SSO</td>
+<td><strong>IT help desk</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>Quick reference</h1>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>This guide (PDF)</td>
+<td><code>docs/NEW-USER-SIMPLE-GUIDE.pdf</code></td>
+</tr>
+<tr>
+<td>IFP folder to open in Cursor</td>
+<td><code>...\ifp-frequency-cap-tests</code></td>
+</tr>
+<tr>
+<td>MCP config</td>
+<td><code>C:\Users\You\.cursor\mcp.json</code></td>
+</tr>
+<tr>
+<td>IFP portal</td>
+<td>https://ifp-portal-prod.aor.prod.hulu.com/home</td>
+</tr>
+<tr>
+<td>Open chat</td>
+<td><strong>Ctrl+I</strong></td>
+</tr>
+<tr>
+<td>Open Settings</td>
+<td><strong>Ctrl+,</strong></td>
+</tr>
+<tr>
+<td>Reload Cursor</td>
+<td><strong>Ctrl+Shift+P</strong> → Reload Window</td>
+</tr>
+</tbody>
+</table>
+<p><strong>End of guide.</strong></p>
+</body>
+</html>
